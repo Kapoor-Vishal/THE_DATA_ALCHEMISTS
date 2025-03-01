@@ -59,6 +59,7 @@ Version Control: Git & GitHub
 1️⃣ Clone the Repository
 
 git clone https://github.com/Kapoor-Vishal/THE_DATA_ALCHEMISTS.git
+
 2️⃣ Install Dependencies
 
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost
