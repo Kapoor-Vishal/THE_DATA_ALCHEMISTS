@@ -1,0 +1,147 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "csr_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "xgboost",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xgboost",
+        "description": "xgboost",
+        "detail": "xgboost",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "dump",
+        "importPath": "joblib",
+        "description": "joblib",
+        "isExtraImport": true,
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "data_preprocessing",
+        "importPath": "data_preprocessing",
+        "description": "data_preprocessing",
+        "isExtraImport": true,
+        "detail": "data_preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "data_preprocessing",
+        "kind": 2,
+        "importPath": "data_preprocessing",
+        "description": "data_preprocessing",
+        "peekOfCode": "def data_preprocessing(file_path):\n    try:\n        # ✅ Load Data\n        df = pd.read_csv(file_path)\n        print(f\"✅ Data Loaded Successfully! Shape: {df.shape}\")\n        # ✅ Drop Missing Values\n        df.dropna(inplace=True)\n        # ✅ Ensure Target Column Exists\n        if 'Profit (USD)' not in df.columns:\n            raise ValueError(\"❌ ERROR: 'Profit (USD)' column is missing in the dataset!\")",
+        "detail": "data_preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "data_train",
+        "description": "data_train",
+        "peekOfCode": "model = xgb.XGBRegressor(objective='reg:squarederror', n_estimators=100, max_depth=6, learning_rate=0.1)\nmodel.fit(X_train, y_train)\n# ✅ Model Evaluation\nr2 = model.score(X_test, y_test)\nmse = np.mean((model.predict(X_test) - y_test) ** 2)\nmae = np.mean(np.abs(model.predict(X_test) - y_test))\n# ✅ Cross-Validation\ncv_scores = cross_val_score(model, X_train, y_train, cv=5, scoring='r2')\n# 📊 Print Results\nprint(f\"📊 XGBoost Performance:\")",
+        "detail": "data_train",
+        "documentation": {}
+    },
+    {
+        "label": "r2",
+        "kind": 5,
+        "importPath": "data_train",
+        "description": "data_train",
+        "peekOfCode": "r2 = model.score(X_test, y_test)\nmse = np.mean((model.predict(X_test) - y_test) ** 2)\nmae = np.mean(np.abs(model.predict(X_test) - y_test))\n# ✅ Cross-Validation\ncv_scores = cross_val_score(model, X_train, y_train, cv=5, scoring='r2')\n# 📊 Print Results\nprint(f\"📊 XGBoost Performance:\")\nprint(f\"🔹 R2 Score: {r2:.4f} ✅ (Optimized)\")\nprint(f\"🔹 MSE: {mse:.4f}\")\nprint(f\"🔹 MAE: {mae:.4f}\")",
+        "detail": "data_train",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "data_train",
+        "description": "data_train",
+        "peekOfCode": "mse = np.mean((model.predict(X_test) - y_test) ** 2)\nmae = np.mean(np.abs(model.predict(X_test) - y_test))\n# ✅ Cross-Validation\ncv_scores = cross_val_score(model, X_train, y_train, cv=5, scoring='r2')\n# 📊 Print Results\nprint(f\"📊 XGBoost Performance:\")\nprint(f\"🔹 R2 Score: {r2:.4f} ✅ (Optimized)\")\nprint(f\"🔹 MSE: {mse:.4f}\")\nprint(f\"🔹 MAE: {mae:.4f}\")\nprint(f\"🔹 Cross-Validation Mean R2: {cv_scores.mean():.4f}\")",
+        "detail": "data_train",
+        "documentation": {}
+    },
+    {
+        "label": "mae",
+        "kind": 5,
+        "importPath": "data_train",
+        "description": "data_train",
+        "peekOfCode": "mae = np.mean(np.abs(model.predict(X_test) - y_test))\n# ✅ Cross-Validation\ncv_scores = cross_val_score(model, X_train, y_train, cv=5, scoring='r2')\n# 📊 Print Results\nprint(f\"📊 XGBoost Performance:\")\nprint(f\"🔹 R2 Score: {r2:.4f} ✅ (Optimized)\")\nprint(f\"🔹 MSE: {mse:.4f}\")\nprint(f\"🔹 MAE: {mae:.4f}\")\nprint(f\"🔹 Cross-Validation Mean R2: {cv_scores.mean():.4f}\")\n# ✅ Save Model",
+        "detail": "data_train",
+        "documentation": {}
+    },
+    {
+        "label": "cv_scores",
+        "kind": 5,
+        "importPath": "data_train",
+        "description": "data_train",
+        "peekOfCode": "cv_scores = cross_val_score(model, X_train, y_train, cv=5, scoring='r2')\n# 📊 Print Results\nprint(f\"📊 XGBoost Performance:\")\nprint(f\"🔹 R2 Score: {r2:.4f} ✅ (Optimized)\")\nprint(f\"🔹 MSE: {mse:.4f}\")\nprint(f\"🔹 MAE: {mae:.4f}\")\nprint(f\"🔹 Cross-Validation Mean R2: {cv_scores.mean():.4f}\")\n# ✅ Save Model\ndump(model, \"models/xgboost_model.joblib\")\nprint(\"✅ Model Saved Successfully!\")",
+        "detail": "data_train",
+        "documentation": {}
+    }
+]
