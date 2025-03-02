@@ -1,0 +1,252 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "LGBMRegressor",
+        "importPath": "lightgbm",
+        "description": "lightgbm",
+        "isExtraImport": true,
+        "detail": "lightgbm",
+        "documentation": {}
+    },
+    {
+        "label": "CatBoostRegressor",
+        "importPath": "catboost",
+        "description": "catboost",
+        "isExtraImport": true,
+        "detail": "catboost",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_absolute_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Machine_Learning.model_train",
+        "description": "Machine_Learning.model_train",
+        "peekOfCode": "df = pd.read_csv(\"../data/processed/cleaned_data.csv\")\n# ✅ Selecting Optimized Features\nfeatures = [\"Revenue (USD)\", \"Operating Cost (USD)\", \"Load Factor (%)\"]\nX = df[features]\ny = df[\"Profit (USD)\"]\n# ✅ Train-Test Split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\n# ✅ Define Optimized Models\nmodels = {\n    \"Linear Regression\": LinearRegression(n_jobs=-1),",
+        "detail": "Machine_Learning.model_train",
+        "documentation": {}
+    },
+    {
+        "label": "features",
+        "kind": 5,
+        "importPath": "Machine_Learning.model_train",
+        "description": "Machine_Learning.model_train",
+        "peekOfCode": "features = [\"Revenue (USD)\", \"Operating Cost (USD)\", \"Load Factor (%)\"]\nX = df[features]\ny = df[\"Profit (USD)\"]\n# ✅ Train-Test Split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\n# ✅ Define Optimized Models\nmodels = {\n    \"Linear Regression\": LinearRegression(n_jobs=-1),\n    \"Random Forest\": RandomForestRegressor(n_estimators=50, random_state=42, n_jobs=-1),\n    \"LightGBM\": LGBMRegressor(n_estimators=50, learning_rate=0.1, max_depth=5, random_state=42, n_jobs=-1),",
+        "detail": "Machine_Learning.model_train",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Machine_Learning.model_train",
+        "description": "Machine_Learning.model_train",
+        "peekOfCode": "X = df[features]\ny = df[\"Profit (USD)\"]\n# ✅ Train-Test Split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\n# ✅ Define Optimized Models\nmodels = {\n    \"Linear Regression\": LinearRegression(n_jobs=-1),\n    \"Random Forest\": RandomForestRegressor(n_estimators=50, random_state=42, n_jobs=-1),\n    \"LightGBM\": LGBMRegressor(n_estimators=50, learning_rate=0.1, max_depth=5, random_state=42, n_jobs=-1),\n    \"CatBoost\": CatBoostRegressor(iterations=50, learning_rate=0.1, depth=5, random_state=42, verbose=0)",
+        "detail": "Machine_Learning.model_train",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Machine_Learning.model_train",
+        "description": "Machine_Learning.model_train",
+        "peekOfCode": "y = df[\"Profit (USD)\"]\n# ✅ Train-Test Split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)\n# ✅ Define Optimized Models\nmodels = {\n    \"Linear Regression\": LinearRegression(n_jobs=-1),\n    \"Random Forest\": RandomForestRegressor(n_estimators=50, random_state=42, n_jobs=-1),\n    \"LightGBM\": LGBMRegressor(n_estimators=50, learning_rate=0.1, max_depth=5, random_state=42, n_jobs=-1),\n    \"CatBoost\": CatBoostRegressor(iterations=50, learning_rate=0.1, depth=5, random_state=42, verbose=0)\n}",
+        "detail": "Machine_Learning.model_train",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 5,
+        "importPath": "Machine_Learning.model_train",
+        "description": "Machine_Learning.model_train",
+        "peekOfCode": "models = {\n    \"Linear Regression\": LinearRegression(n_jobs=-1),\n    \"Random Forest\": RandomForestRegressor(n_estimators=50, random_state=42, n_jobs=-1),\n    \"LightGBM\": LGBMRegressor(n_estimators=50, learning_rate=0.1, max_depth=5, random_state=42, n_jobs=-1),\n    \"CatBoost\": CatBoostRegressor(iterations=50, learning_rate=0.1, depth=5, random_state=42, verbose=0)\n}\n# ✅ Train and Evaluate Models\nmodel_results = []\nfor name, model in models.items():\n    start_time = time.time()",
+        "detail": "Machine_Learning.model_train",
+        "documentation": {}
+    },
+    {
+        "label": "model_results",
+        "kind": 5,
+        "importPath": "Machine_Learning.model_train",
+        "description": "Machine_Learning.model_train",
+        "peekOfCode": "model_results = []\nfor name, model in models.items():\n    start_time = time.time()\n    model.fit(X_train, y_train)  # Train model\n    y_pred = model.predict(X_test)\n    r2 = r2_score(y_test, y_pred)\n    mse = mean_squared_error(y_test, y_pred)\n    mae = mean_absolute_error(y_test, y_pred)\n    train_time = time.time() - start_time\n    model_results.append((name, model, r2, mse, mae, train_time))",
+        "detail": "Machine_Learning.model_train",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Machine_Learning.predictions",
+        "description": "Machine_Learning.predictions",
+        "peekOfCode": "model = joblib.load(\"best_model.pkl\")\n# Load new data for prediction\nnew_data = pd.read_csv(\"../data/processed/cleaned_data.csv\")  # Replace with your actual file\n# Selecting same features as used in training\nfeatures = [\"Revenue (USD)\", \"Operating Cost (USD)\", \"Load Factor (%)\"]\nX_new = new_data[features]\n# Make predictions\nnew_data[\"Predicted Profit (USD)\"] = model.predict(X_new)\n# Save predictions to a CSV file\nnew_data.to_csv(\"../data/predicted_output.csv\", index=False)",
+        "detail": "Machine_Learning.predictions",
+        "documentation": {}
+    },
+    {
+        "label": "new_data",
+        "kind": 5,
+        "importPath": "Machine_Learning.predictions",
+        "description": "Machine_Learning.predictions",
+        "peekOfCode": "new_data = pd.read_csv(\"../data/processed/cleaned_data.csv\")  # Replace with your actual file\n# Selecting same features as used in training\nfeatures = [\"Revenue (USD)\", \"Operating Cost (USD)\", \"Load Factor (%)\"]\nX_new = new_data[features]\n# Make predictions\nnew_data[\"Predicted Profit (USD)\"] = model.predict(X_new)\n# Save predictions to a CSV file\nnew_data.to_csv(\"../data/predicted_output.csv\", index=False)\nprint(\"✅ Predictions saved successfully in 'predicted_output.csv'!\")",
+        "detail": "Machine_Learning.predictions",
+        "documentation": {}
+    },
+    {
+        "label": "features",
+        "kind": 5,
+        "importPath": "Machine_Learning.predictions",
+        "description": "Machine_Learning.predictions",
+        "peekOfCode": "features = [\"Revenue (USD)\", \"Operating Cost (USD)\", \"Load Factor (%)\"]\nX_new = new_data[features]\n# Make predictions\nnew_data[\"Predicted Profit (USD)\"] = model.predict(X_new)\n# Save predictions to a CSV file\nnew_data.to_csv(\"../data/predicted_output.csv\", index=False)\nprint(\"✅ Predictions saved successfully in 'predicted_output.csv'!\")",
+        "detail": "Machine_Learning.predictions",
+        "documentation": {}
+    },
+    {
+        "label": "X_new",
+        "kind": 5,
+        "importPath": "Machine_Learning.predictions",
+        "description": "Machine_Learning.predictions",
+        "peekOfCode": "X_new = new_data[features]\n# Make predictions\nnew_data[\"Predicted Profit (USD)\"] = model.predict(X_new)\n# Save predictions to a CSV file\nnew_data.to_csv(\"../data/predicted_output.csv\", index=False)\nprint(\"✅ Predictions saved successfully in 'predicted_output.csv'!\")",
+        "detail": "Machine_Learning.predictions",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home():\n    return jsonify({\"message\": \"Welcome to the Airline Profit Prediction API!\", \"status\": \"Running\"}), 200\n@app.route(\"/predict\", methods=[\"POST\"])\ndef predict():\n    try:\n        # Get JSON data from request\n        data = request.get_json()\n        # Ensure data is formatted as a DataFrame\n        df = pd.DataFrame([data])  # Convert single dict into DataFrame\n        # Make prediction",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def predict():\n    try:\n        # Get JSON data from request\n        data = request.get_json()\n        # Ensure data is formatted as a DataFrame\n        df = pd.DataFrame([data])  # Convert single dict into DataFrame\n        # Make prediction\n        prediction = model.predict(df)\n        # Return response\n        return jsonify({\"predicted_profit\": prediction.tolist()}), 200",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n# Load the trained model\nmodel = joblib.load(\"Machine_Learning/best_model.pkl\")\n@app.route(\"/\", methods=[\"GET\"])\ndef home():\n    return jsonify({\"message\": \"Welcome to the Airline Profit Prediction API!\", \"status\": \"Running\"}), 200\n@app.route(\"/predict\", methods=[\"POST\"])\ndef predict():\n    try:\n        # Get JSON data from request",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "model = joblib.load(\"Machine_Learning/best_model.pkl\")\n@app.route(\"/\", methods=[\"GET\"])\ndef home():\n    return jsonify({\"message\": \"Welcome to the Airline Profit Prediction API!\", \"status\": \"Running\"}), 200\n@app.route(\"/predict\", methods=[\"POST\"])\ndef predict():\n    try:\n        # Get JSON data from request\n        data = request.get_json()\n        # Ensure data is formatted as a DataFrame",
+        "detail": "app",
+        "documentation": {}
+    }
+]
