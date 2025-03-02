@@ -1,4 +1,4 @@
-# Group Presentation Video Lonk-
+# Group Presentation Video Link-
 https://drive.google.com/file/d/1YYSgRVVGoViOtf-8iqfeGioJI0Ac2YrG/view?usp=sharing
 
 # ✈ Aviation Analytics & Profit Prediction
@@ -100,6 +100,8 @@ python train_model.py
 
 ---
 
+##Power BI File Link 
+https://drive.google.com/file/d/1DrL2gS_ZnCWfxfgNqqZMe9ljrvDpqsXq/view?usp=sharing
 ## 📬 Contact
 
 For any queries, feel free to reach out:
